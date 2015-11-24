@@ -1,5 +1,10 @@
 language: python
 before_install:
+- sudo apt-add-repository -y ppa:comp-phys/stable
+- sudo apt-get update -qq
+# See issue travis-ci/travis-ci#1379
+- [ "$CXX" = "g++" ] && sudo apt-get install -qq g++-4.8
+- [ "$CXX" = "g++" ] && export CXX="g++-4.8" CC="gcc-4.8"
 - sudo add-apt-repository --yes ppa:fontforge/fontforge
 - sudo apt-get update -qq
 - sudo apt-get install python-fontforge ttfautohint swig
