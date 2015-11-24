@@ -10,6 +10,7 @@ before_install:
 - sudo apt-get install python-fontforge ttfautohint swig
 - cp /usr/lib/python2.7/dist-packages/fontforge.* "$HOME/virtualenv/python2.7.9/lib/python2.7/site-packages"
 install:
+- pip install Jinja2
 - pip install git+https://github.com/behdad/fontTools.git
 - CXX="g++-4.8" CC="gcc-4.8" pip install git+https://github.com/googlefonts/fontcrunch.git
 - pip install git+https://github.com/googlefonts/fontbakery.git
