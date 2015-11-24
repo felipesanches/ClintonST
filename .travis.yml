@@ -1,6 +1,6 @@
 language: python
 before_install:
-- sudo apt-add-repository -y ppa:comp-phys/stable
+- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt-get update -qq
 # See issue travis-ci/travis-ci#1379
 - sudo apt-get install -qq g++-4.8
