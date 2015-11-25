@@ -1,0 +1,109 @@
+Error:
+note: ERROR: bakery_lint/fonttests/test_ufo.py: TestDiacritic.test_diacritic_made_as_component():  Check that diacritic glyph are made completely with composite
+note: ERROR: bakery_lint/fonttests/test_ufo.py: TestDiacritic.test_diacritic_made_as_mark_to_mark():  Check that diacritic glyph are made completely with mark method
+note: ERROR: bakery_lint/fonttests/test_ufo.py: TestDiacritic.test_diacritic_made_as_own_glyphs():  Check that diacritic glyph are made completely with flat method
+required: FAIL: bakery_lint/fonttests/test_upstream.py: CheckTextFilesExist.test_copyrighttxt_exists():  Font folder should contains COPYRIGHT.txt : ['COPYRIGHT.txt'] does not exist in project
+required: FAIL: bakery_lint/fonttests/test_upstream.py: CheckTextFilesExist.test_description_exists():  Font folder should contains DESCRIPTION.en_us.html : ['DESCRIPTION.en_us.html'] does not exist in project
+note: FAIL: bakery_lint/fonttests/test_upstream.py: CheckTextFilesExist.test_fontlogtxt_exists():  Font folder should contains FONTLOG.txt : ['FONTLOG.txt'] does not exist in project
+required: FAIL: bakery_lint/fonttests/test_upstream.py: CheckTextFilesExist.test_licensetxt_exists():  Font folder should contains LICENSE.txt : ['LICENSE.txt', 'OFL.txt'] does not exist in project
+note: FAIL: bakery_lint/fonttests/test_upstream.py: TestUpstreamRepo.test_bakery_yaml_exists():  Repository contains bakery.yaml configuration file? : File `bakery.yaml` does not exist in root of upstream repository
+note: FAIL: bakery_lint/fonttests/test_upstream.py: TestUpstreamRepo.test_metadata_json_exists():  Repository contains METADATA.json file? : File `METADATA.json` does not exist in root of upstream repository
+Internal Error (overlap) in parenleft: Winding number did not return to 0 when y=324.5
+Internal Error (overlap) in parenleft: Closing contour with unneeded path
+Internal Error (overlap) in parenright: Winding number did not return to 0 when y=323.5
+Internal Error (overlap) in parenright: Closing contour with unneeded path
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_gasp_table_type():  Font table gasp should be 15 : gaspRange[65535] value is not 15
+no table gasp
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_gasp_table_type():  Font table gasp should be 15 : gaspRange[65535] value is not 15
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_glyf_table_length():  Check if there is unused data at the end of the glyf table : Glyf table has unreachable data at the end of the table. Expected glyf table length 484 (from loca table), got length 24068 (difference: 23584)
+required: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : Font does not contain a nbsp glyph
+ER: ClintonST.ttf space 247 nbsp N: Added nbsp to 247
+ER: ClintonST.ttf space 247 nbsp 0: Fixed space to 0
+required: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_nbsp_width_matches_sp_width():  Check non-breaking space's advancewidth is the same as space : Font does not contain a tab glyph
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_no_problematic_formats():  Check that font contain required tables : unsupported operand type(s) for +: 'set' and 'set'
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_opentype_familyname():  OT Family Name for Windows should be equal to Family Name : u'Clinton' != u'Clinton ST' - Clinton + Clinton ST ?        +++
+```
+ClintonST.ttf
+
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 18: "Clinton ST Regular"
+```
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_opentype_familyname():  OT Family Name for Windows should be equal to Family Name : u'Clinton' != u'Clinton ST' - Clinton + Clinton ST ?        +++
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_opentype_fullname():  Full name matches Windows-only Opentype-specific FullName : '' != u'Clinton ST'
+```
+ClintonST.ttf
+
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 18: "Clinton ST Regular"
+```
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_opentype_fullname():  Full name matches Windows-only Opentype-specific FullName : '' != u'Clinton ST'
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_check_upm_heigths_less_120():  Check if UPM Heights NOT more than 120% : UPM:Height is 125%, consider redesigning to 120% or less
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_epar_in_keys():  EPAR table present in font? : No
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_font_unencoded_glyphs():  Font does not have unencoded glyphs : There should not be unencoded glyphs
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_fontname_is_equal_to_macstyle():  Check that fontname is equal to macstyle flags : macStyle (b0) supposed style ended with "Regular"
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_glyphname_does_not_contain_disallowed_chars():  GlyphName length < 30 and does contain allowed chars only : Glyph ".null" does not comply conventions. A glyph name may be up to 31 characters in length, must be entirely comprised of characters from the following set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or period. The only exception is the special character ".notdef". "twocents", "a1", and "_" are valid glyph names. "2cents" and ".twocents" are not.
+required: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_is_fstype_not_set():  Is the OS/2 table fsType set to 0? : 4 != 0
+ER: ClintonST.ttf 4: Fixed to 0
+required: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_license_included_in_font_names():  Check font has a correct license url : expected string or buffer
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_metrics_ascents_equal_bbox():  Check that ascents values are same as max glyph point : [ClintonST.ttf] ascents differ to maximum value: 1242
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_name_id_apache_license():  Is there Apache in nameId (13) ?
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_name_id_apache_license_url():  Is there OFL in nameId (13) ?
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_name_id_copyright():  Is there `opyright` substring nameID in nameId (10) ? : True is not false
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_name_id_of_license():  Is there OFL in nameId (13) ?
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_name_id_of_license_url():  Is there OFL in nameId (13) ?
+required: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_ots():  Is TTF file correctly sanitized for Firefox and Chrome : run() got an unexpected keyword argument 'log'
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_prep_magic_code():  Font contains in PREP table magic code : 0
+info: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_source_ttf_font_filename_equals_familystyle():  Source TTF Font filename equals family style : global name 'family_name' is not defined
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_suggested_subfamily_name():  Family does not contain subfamily in `name` table : u'Clinton ST' != u'Clinton' - Clinton ST ?        --- + Clinton
+```
+ClintonST.ttf
+
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 1: "Clinton ST Regular"
+NAMEID 2: "Regular"
+NAMEID 4: "Clinton ST Regular"
+NAMEID 6: "ClintonST-Regular"
+NAMEID 16: "Clinton ST"
+NAMEID 17: "Regular"
+NAMEID 18: "Clinton ST Regular"
+```
+note: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_suggested_subfamily_name():  Family does not contain subfamily in `name` table : u'Clinton ST' != u'Clinton' - Clinton ST ?        --- + Clinton
+note: ERROR: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_ttx_family_naming_recommendation(): The font follows the font family naming recommendation.: 0
+info: FAIL: bakery_lint/fonttests/test_ttf.py: TTFTestCase.test_version_in_name_table_is_in_correct_format():  Version is in correct format in `name` table : The NAME id 5 string value must follow the pattern Version X.Y. Current value: 1.000
+note: FAIL: bakery_lint/fonttests/test_ttf.py: FontForgeValidateStateTest.test_missing_extrema_in_glyphs():  Glyphs have points at extremas : True is not false
+note: FAIL: bakery_lint/fonttests/test_ttf.py: FontForgeValidateStateTest.test_validation_glyph_intersect():  Contours do not intersect : True is not false
+required: FAIL: bakery_lint/fonttests/test_ttf.py: CheckFontAgreements.test_latin_file_exists():  GF requires a latin subset, so we check that font file exists : False is not true
+required: FAIL: bakery_lint/fonttests/test_ttf.py: CheckFontAgreements.test_menu_file_exists():  GF requires a menu subset, so we check that font file exists : False is not true
+Error: No module named subset
+BUILD FAILED
+Run with --verbose to get stacktrace info.
